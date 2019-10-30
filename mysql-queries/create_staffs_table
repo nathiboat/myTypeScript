@@ -1,0 +1,14 @@
+CREATE TABLE `wali_staffs` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'staff ID',
+  `first_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Name of staff',
+  `last_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'Last name of staff',
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '' COMMENT 'staff password',
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT 'staff email',
+  `token` TEXT COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'staff token when login and will diestroy when logout',
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'description of staff or status',
+  `picture` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'image of staff',
+  `active` tinyint(1) NOT NULL DEFAULT '1' COMMENT 'soft delete flag',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'the date created staff data ',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'the date when staff update information',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

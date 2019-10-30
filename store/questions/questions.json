@@ -1,0 +1,20 @@
+[
+    {
+        "question": "🤳 Is this selfie genuine and clearly of their face?",
+        "case": "photoVerification",
+        "completeLevel": false
+    },
+    {
+        "question": "👙 Is this photo free from offensive material or nudity (not shirtless)?",
+        "case": "photo",
+        "completeLevel": false
+    },
+    {
+        "question": "💬 Is this free from bad language, Islamophobia, and references to illegal activity?",
+        "case": "statusMessage"
+    },
+    {
+        "question": "😡 Is this free from bad language, Islamophobia, gibberish, and references to illegal activity?",
+        "case": "longDescription"
+    }
+]

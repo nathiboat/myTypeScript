@@ -1,0 +1,12 @@
+node_modules
+.env
+build
+.idea
+src/example.ts
+.DS_Store
+
+cypress/videos
+cypress/screenshots
+cypress/integration/examples
+cypress/fixtures
+cypress.json

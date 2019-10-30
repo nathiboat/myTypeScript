@@ -1,0 +1,10 @@
+CREATE TABLE `wali_staffs_roles` (
+  `staff_id` int(11) unsigned NOT NULL COMMENT 'staff id',
+  `role_id` int(11) unsigned NOT NULL COMMENT 'role id',
+  UNIQUE KEY `unique_index` (`staff_id`,`role_id`),
+  KEY `wali_staff_id` (`staff_id`),
+  KEY `wali_role_id` (`role_id`),
+  KEY `staff_id` (`staff_id`),
+  CONSTRAINT `wali_role_id` FOREIGN KEY (`role_id`) REFERENCES `wali_roles` (`id`),
+  CONSTRAINT `wali_staff_id` FOREIGN KEY (`staff_id`) REFERENCES `wali_staffs` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,3 @@
+export {
+    IInsertMessageCommand
+} from './Commands'

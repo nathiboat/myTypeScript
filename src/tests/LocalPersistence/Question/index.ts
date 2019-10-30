@@ -1,0 +1,3 @@
+import LocalSelectCountApprovalPendingMembersQuery from './LocalSelectCountApprovalPendingMembersQuery'
+
+export { LocalSelectCountApprovalPendingMembersQuery }

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["es2017", "dom"],
+        "rootDir": "src",
+        "outDir": "build",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noEmitOnError": true,
+        "declaration": true,
+        "strict": true,
+        "types": ["node"],
+        "baseUrl": ".",
+        "paths": {
+            "*": [ "node_modules/*" ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

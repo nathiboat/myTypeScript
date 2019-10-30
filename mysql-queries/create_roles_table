@@ -1,0 +1,9 @@
+CREATE TABLE `wali_roles` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'role_id',
+  `product_name` varchar(255) CHARACTER SET latin1 NOT NULL DEFAULT '' COMMENT 'product name',
+  `role_name` varchar(255) CHARACTER SET latin1 DEFAULT NULL COMMENT 'role name',
+  `role_description` TEXT CHARACTER SET latin1 DEFAULT NULL COMMENT 'role description',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'date create the role',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'date updated the role',
+  PRIMARY KEY (`id`)
+);
