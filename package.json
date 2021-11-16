@@ -24,7 +24,7 @@
         "@types/node-xmpp-client": "^3.1.4",
         "@types/nodemailer": "^4.6.8",
         "appoptics-apm": "^6.5.1",
-        "aws-sdk": "^2.465.0",
+        "aws-sdk": "^2.814.0",
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.0",
         "chai-http": "^4.3.0",
